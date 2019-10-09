@@ -16,9 +16,12 @@
     </head>
 
     <body dir="rtl">
-        <h1>בנו את התכנית שלכם</h1>
-        <div id="blocklyDiv" style="height: 480px; width: 100%;"></div>
-        <xml id="toolbox" style="display: none">
+        <div>
+            <h1>בנו את התכנית שלכם</h1>
+        </div>
+
+        <div id="blocklyDiv" style="height: 800px; width: 100%;"></div>
+        <xml id="toolbox" style="display: none;">
             <category name="General">
                 <block type="controls_if"></block>
                 <block type="controls_repeat_ext"></block>
@@ -30,26 +33,40 @@
             </category>
             <category name="Variables" custom="VARIABLE"></category>
             <category name="Functions" custom="PROCEDURE"></category>
-            <category name="ארגון" colour="210">
+            <category name="ארגון" colour="210" expanded="true">
                 <block type="unit"></block>
             </category>
-            <category name="לימודים" colour="120">
+            <category name="לימודים" colour="120" expanded="true">
                 <block type="program"></block>
+                <label text="בדיקות מעבר"></label>
+                <label text="אפיקים"></label>
+
+                <label text="אגדי קורסים"></label>
                 <block type="must_courses"></block>
                 <block type="choice_courses"></block>
                 <block type="must_choose_courses"></block>
-
+                <label text="קורסים"></label>
                 <block type="course"></block>
 
             </category>
           </xml>
 
-
-          <script>
-            var workspace = Blockly.inject('blocklyDiv',
-                {toolbox: document.getElementById('toolbox'),
-                rtl: true});
-          </script>
-                    
+        <script>
+            var toolbox= document.getElementById('toolbox');
+            Blockly.inject('blocklyDiv', 
+                    {'toolbox': toolbox,
+                     rtl: true,
+				     zoom:
+				         {controls: true,
+				          wheel: true,
+				          startScale: 1.0,
+				          maxScale: 2,
+				          minScale: 0.3,
+				          scaleSpeed: 1.2},
+				     trashcan: true
+     				});
+        </script>
+                            
+                 
     </body>
 </html>
