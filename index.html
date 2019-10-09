@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <script src="blockly_compressed.js"></script>
+        <script src="blocks_compressed.js"></script>
+        <script src="msg/js/he.js"></script>
+
+        <script src="blocks/unit.js"></script>
+        <script src="blocks/studies/course.js"></script>
+        <script src="blocks/studies/program.js"></script>
+        <script src="blocks/studies/must_courses.js"></script>
+        <script src="blocks/studies/choice_courses.js"></script>
+        <script src="blocks/studies/must_choose_courses.js"></script>
+
+    </head>
+
+    <body dir="rtl">
+        <h1>בנו את התכנית שלכם</h1>
+        <div id="blocklyDiv" style="height: 480px; width: 100%;"></div>
+        <xml id="toolbox" style="display: none">
+            <category name="General">
+                <block type="controls_if"></block>
+                <block type="controls_repeat_ext"></block>
+                <block type="logic_compare"></block>
+                <block type="math_number"></block>
+                <block type="math_arithmetic"></block>
+                <block type="text"></block>
+                <block type="text_print"></block>
+            </category>
+            <category name="Variables" custom="VARIABLE"></category>
+            <category name="Functions" custom="PROCEDURE"></category>
+            <category name="ארגון" colour="210">
+                <block type="unit"></block>
+            </category>
+            <category name="לימודים" colour="120">
+                <block type="program"></block>
+                <block type="must_courses"></block>
+                <block type="choice_courses"></block>
+                <block type="must_choose_courses"></block>
+
+                <block type="course"></block>
+
+            </category>
+          </xml>
+
+
+          <script>
+            var workspace = Blockly.inject('blocklyDiv',
+                {toolbox: document.getElementById('toolbox'),
+                rtl: true});
+          </script>
+                    
+    </body>
+</html>
