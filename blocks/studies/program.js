@@ -17,11 +17,5 @@ var programJson = {
 Blockly.Blocks['program'] = {
   init: function() {
     this.jsonInit(programJson);
-    // Assign 'this' to a variable for use in the tooltip closure below.
-    var thisBlock = this;
-    this.setTooltip(function() {
-      return 'Add a number to variable "%1".'.replace('%1',
-          thisBlock.getFieldValue('VAR'));
-    });
   }
 };

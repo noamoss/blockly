@@ -20,14 +20,8 @@ var choiceCoursesJson =
 };
 
 
-  Blockly.Blocks['choice_courses'] = {
-    init: function() {
-      this.jsonInit(choiceCoursesJson);
-      // Assign 'this' to a variable for use in the tooltip closure below.
-      var thisBlock = this;
-      this.setTooltip(function() {
-        return 'Add a number to variable "%1".'.replace('%1',
-            thisBlock.getFieldValue('VAR'));
-      });
-    }
-  };
+Blockly.Blocks['choice_courses'] = {
+  init: function() {
+    this.jsonInit(choiceCoursesJson);
+  }
+};
