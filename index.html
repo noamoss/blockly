@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="he">
     <head>
+        <title>Huji Playground</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
         <script src="blockly_compressed.js"></script>
         <script src="blocks_compressed.js"></script>
         <script src="msg/js/he.js"></script>
 
         <script src="blocks/unit.js"></script>
-        <script src="blocks/studies/course.js"></script>
+
         <script src="blocks/studies/program.js"></script>
+        <script src="blocks/studies/afik.js"></script>
+        <script src="blocks/studies/step.js"></script>
+
+        <script src="blocks/studies/course.js"></script>
         <script src="blocks/studies/must_courses.js"></script>
         <script src="blocks/studies/choice_courses.js"></script>
         <script src="blocks/studies/must_choose_courses.js"></script>
@@ -17,6 +22,10 @@
         <script src="blocks/studies/hitmahut_courses.js"></script>
         <script src="blocks/studies/block_round_courses.js"></script>
 
+        <script src="blocks/studies/admission_prerequisites.js"></script>
+        <script src="blocks/studies/step_through.js"></script>
+        <script src="blocks/studies/graduation_conditions.js"></script>
+        <script src="blocks/studies/condition.js"></script>
 
     </head>
 
@@ -43,9 +52,10 @@
             </category>
             <category name="לימודים" colour="120" expanded="true">
                 <block type="program"></block>
-                <label text="בדיקות מעבר"></label>
                 <label text="אפיקים"></label>
-
+                <block type="afik"></block>
+                <label text="שלבים"></label>
+                <block type="step"></block>
                 <label text="אגדי קורסים"></label>
                 <block type="must_courses"></block>
                 <block type="choice_courses"></block>
@@ -57,6 +67,13 @@
 
                 <label text="קורסים"></label>
                 <block type="course"></block>
+
+                <label text="בדיקות עמידה בתנאים"></label>
+                <block type="admission_prerequisites"></block>
+                <block type="step_through"></block>
+                <block type="graduation_conditions"></block>
+
+                <block type="condition"></block>
 
             </category>
           </xml>

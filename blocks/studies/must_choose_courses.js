@@ -3,34 +3,32 @@ var mustChooseCoursesJson = {
   "message0": "קורסי חובת בחירה %1 מינימום נ\"ז: %2 %3 %4 %5",
   "args0": [
     {
-      "type": "input_dummy",
-      "align": "CENTRE"
+      "type": "input_dummy"
     },
     {
-      "type": "input_dummy",
-      "align": "CENTRE"
+      "type": "input_dummy"
     },
     {
-      "type": "field_input",
-      "name": "minPointsInput",
-      "text": "2"
+      "type": "field_number",
+      "name": "NAME",
+      "value": 0
     },
     {
       "type": "input_value",
-      "name": "minPoints",
-      "check": "Number"
+      "name": "NAME"
     },
     {
       "type": "input_statement",
       "name": "NAME",
-      "check": "Course"
+      "check": "course"
     }
   ],
-  "inputsInline": true,
-  "colour": 160,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 290,
   "tooltip": "",
   "helpUrl": ""
-};
+}
 
 Blockly.Blocks['must_choose_courses'] = {
   init: function() {

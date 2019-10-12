@@ -1,6 +1,6 @@
 var blockRoundCoursesJson = {
   "type": "block_round_courses",
-  "message0": "בלוק-סבב %1 %2",
+  "message0": "בלוק-סבב קורסים %1 %2",
   "args0": [
     {
       "type": "input_dummy"
@@ -8,10 +8,13 @@ var blockRoundCoursesJson = {
     {
       "type": "input_statement",
       "name": "NAME",
-      "check": "Course"
+      "check": "course"
     }
   ],
-  "colour": 330,
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 290,
   "tooltip": "קורסים בבלוק-סבב הם אסופה של קורסים שההרשמה והליודים בהם יתבצעו בסבב בין הסטודנטים לאורך השלב, על סדר שיפורסם מראש",
   "helpUrl": ""
 };

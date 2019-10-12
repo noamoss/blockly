@@ -8,14 +8,16 @@ var mustCoursesJson = {
     {
       "type": "input_statement",
       "name": "NAME",
-      "check": "Course"
+      "check": "course"
     }
   ],
-  "inputsInline": false,
-  "colour": 330,
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 290,
   "tooltip": "",
   "helpUrl": ""
-};
+}
 
 Blockly.Blocks['must_courses'] = {
   init: function() {
