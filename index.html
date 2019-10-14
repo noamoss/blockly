@@ -10,6 +10,8 @@
         <script src="blocks/unit.js"></script>
 
         <script src="blocks/studies/program.js"></script>
+        <script src="blocks/studies/diploma.js"></script>
+
         <script src="blocks/studies/afik.js"></script>
         <script src="blocks/studies/step.js"></script>
 
@@ -37,13 +39,19 @@
         <div id="blocklyDiv" style="height: 800px; width: 100%;"></div>
         <xml id="toolbox" style="display: none;">
 
-            <category name="תכניות ליומדים" colour="120" expanded="true">
+            <category name="תכניות לימודים" colour="120" expanded="true">
+                <label text="תכניות לימודים"></label>
                 <block type="program"></block>
+
                 <label text="סוגי תעודה/יעדים"></label>
+                <block type="diploma"></block>
+
                 <label text="אפיקים"></label>
                 <block type="afik"></block>
+                
                 <label text="שלבים"></label>
                 <block type="step"></block>
+                
                 <label text="אגדי קורסים"></label>
                 <block type="must_courses"></block>
                 <block type="choice_courses"></block>
@@ -60,12 +68,18 @@
                 <block type="admission_prerequisites"></block>
                 <block type="step_through"></block>
                 <block type="graduation_conditions"></block>
-
                 <block type="condition"></block>
             </category>
 
             <category name="ישויות ארגוניות" colour="210">
+                <block type="faculty"></block>
+                <block type="school"></block>
                 <block type="unit"></block>
+                <block type="center_unit"></block>
+                <block type="institute_unit"></block>
+
+                <block type="headquarter_unit"></block>
+
             </category>
 
             <category name="ישויוית אנושיות" colour="190">
