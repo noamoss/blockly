@@ -3,7 +3,15 @@
     <head>
         <title>Huji Playground</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
-        <script src="blockly_compressed.js"></script>
+	<script>
+            if (document.referrer == "https://forstud.cc.huji.ac.il/") {
+             window.href = "https://draw.io/?splash=0&lang=he&libs=0&clibs=Uhttps%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D1EbMjqPK_s7iAx-Soc2PvrRkMY7y9vJMn"; 
+            } else {
+                console.log("stay");
+            }
+        </script>
+        
+	 <script src="blockly_compressed.js"></script>
         <script src="blocks_compressed.js"></script>
         <script src="msg/js/he.js"></script>
 
@@ -28,14 +36,6 @@
         <script src="blocks/studies/step_through.js"></script>
         <script src="blocks/studies/graduation_conditions.js"></script>
         <script src="blocks/studies/condition.js"></script>
-        <script>
-
-            if (document.referrer == "https://forstud.cc.huji.ac.il/") {
-             window.href = "https://draw.io/?splash=0&lang=he&libs=0&clibs=Uhttps%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D1EbMjqPK_s7iAx-Soc2PvrRkMY7y9vJMn"; 
-            } else {
-                console.log("stay");
-            }
-        </script>
     </head>
 
     <body dir="rtl">
